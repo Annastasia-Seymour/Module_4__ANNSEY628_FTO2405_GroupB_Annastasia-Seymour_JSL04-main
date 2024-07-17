@@ -37,10 +37,10 @@ while (i < userPreferenceArray.length) {
 // You have a variable that tracks the number of Monster Energy cans left in the fridge. 
 // Use a ternary operator to print "Time to restock!" if the number is less than 5, or "We're stocked!" if the number is 5 or more.
 
-let cansLeft = 3; // Any number of cans
-
-let mightRestock = userAge >= 5 ? "Time to restock!" : "We're stocked!";
-console.log(mightRestock);
+let cansLeft = Math.floor (Math.random() * 10); // Any number of cans
+    console.log(cansLeft);// wanted to check with other inputs without manually changing them.
+let mightRestock = cansLeft >= 5 ? "We're stocked!" :"Time to restock!";
+    console.log(mightRestock);// forgot to replace userAge with cansLeft in ternary operator
 
 
 // #### Challenge 3: Workout Intensity
@@ -48,8 +48,9 @@ console.log(mightRestock);
 // If the heart rate is below 100 bpm, print "Boost needed!", otherwise, print "Energy levels are high!".
 
 let heartRate = 95; // Current heart rate in bpm
-console.log(``);
-
+console.log(heartRate);
+let currentHeart= heartRate <= 100 ? "Boost needed!" :"Energy levels are high!";
+    console.log(currentHeart);
 
 // #### Challenge 4: Temperature Suitability
 // Monster Energy drinks are best served cold. Given the current temperature, use a ternary to print "Chilled to perfection!" 
