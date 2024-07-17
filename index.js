@@ -56,7 +56,7 @@ let currentHeart= heartRate <= 100 ? "Boost needed!" :"Energy levels are high!";
 // Monster Energy drinks are best served cold. Given the current temperature, use a ternary to print "Chilled to perfection!" 
 // if the temperature is below or equal to 5°C, or "Needs a cooler!" if above 5°C.
 console.log("Challenge 4");
-let currentTemp =  Math.floor(Math.random() *21); // Current temperature in °C
+let currentTemp =  Math.floor(Math.random() *21); // Current temperature in °C chose a random max number of 20
 console.log(currentTemp);
 let isChilled = currentTemp <= 5 ? "Chilled to perfection!" : "Needs a cooler!";
 console.log(isChilled);
@@ -85,10 +85,6 @@ if ((currentHour >= 7) &&( currentHour = 24)) {
     
 }I wanted to see it with a simple if else statement
 */
-
-
-
-
 
 // In each of these challenges, the ternary operator is used to decide between two options based on a condition, 
 // demonstrating its utility for concise conditional logic. Remember that while ternaries can make the code more succinct, 
