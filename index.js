@@ -4,8 +4,34 @@
 // Given a variable that holds a user's preferred type of Monster Energy drink, 
 // print whether the user prefers a "Regular" or "Sugar-free" variety. If the preference is not set, default to "Regular".
 
-let userPreference = 'Sugar-free'; // Possible values: 'Regular', 'Sugar-free', or undefined
-console.log(``);
+let userPreferenceArray = ["Sugar-free", "Regular" , undefined];
+let i = 0; 
+
+while (i < userPreferenceArray.length) {
+   let randomIndex = Math.floor(Math.random()*3);//Coach Cinnor mentioned randoms
+   userPreferenceArray[i] = randomIndex  ;
+   console.log(userPreferenceArray[i]);
+          
+        switch (randomIndex) {
+            case 0:
+                console.log("Sugar Free was chosen");
+                break;
+            
+            case 1:
+                console.log("Regular was chosen");
+                break;
+
+            case 2:
+                console.log("Undefined was chosen");
+                break;
+            default:
+                console.log("Invalid!");
+                break;
+        }
+        break;// one output
+    }
+// Possible values: 'Regular', 'Sugar-free', or undefined try an array
+ 
 
 // #### Challenge 2: Stock Check
 // You have a variable that tracks the number of Monster Energy cans left in the fridge. 
@@ -20,7 +46,7 @@ console.log(``);
 // If the heart rate is below 100 bpm, print "Boost needed!", otherwise, print "Energy levels are high!".
 
 let heartRate = 95; // Current heart rate in bpm
-console.log(`'}`);
+console.log(``);
 
 
 // #### Challenge 4: Temperature Suitability
@@ -43,6 +69,13 @@ let currentHour = 22;
 // If it's between 7am and midnight (24-hour format), print "Unleash the beast!"
 // Otherwise, print "Better stick to water."
 
+if ((currentHour >= 7) &&( currentHour = 24)) {
+    console.log('Unleash the beast!');
+    console.print('unleash the baby');
+} else {
+    console.log('Now isnt the time for nonsense!');
+    console.print('Now isnt the time for nonsense!');
+}
 
 
 
