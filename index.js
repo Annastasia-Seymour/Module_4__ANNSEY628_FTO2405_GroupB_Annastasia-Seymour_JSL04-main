@@ -28,7 +28,7 @@ while (i < userPreferenceArray.length) {
                 console.log("Invalid!");
                 break;
         }
-        break;// one output
+        break;// one output instead of it looping based n the Array length.
     }
 // Possible values: 'Regular', 'Sugar-free', or undefined try an array
  
@@ -38,7 +38,9 @@ while (i < userPreferenceArray.length) {
 // Use a ternary operator to print "Time to restock!" if the number is less than 5, or "We're stocked!" if the number is 5 or more.
 
 let cansLeft = 3; // Any number of cans
-console.log(``);
+
+let mightRestock = userAge >= 5 ? "Time to restock!" : "We're stocked!";
+console.log(mightRestock);
 
 
 // #### Challenge 3: Workout Intensity
