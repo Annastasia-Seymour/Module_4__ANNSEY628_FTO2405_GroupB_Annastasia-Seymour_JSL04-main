@@ -3,7 +3,7 @@
 // #### Challenge 1: Flavor Selection
 // Given a variable that holds a user's preferred type of Monster Energy drink, 
 // print whether the user prefers a "Regular" or "Sugar-free" variety. If the preference is not set, default to "Regular".
-
+console.log("Challenge 1");
 let userPreferenceArray = ["Sugar-free", "Regular" , undefined];
 let i = 0; 
 
@@ -28,15 +28,15 @@ while (i < userPreferenceArray.length) {
                 console.log("Invalid!");
                 break;
         }
-        break;// one output instead of it looping based n the Array length.
+        break;// one output instead of it looping based on the Array length.
     }
-// Possible values: 'Regular', 'Sugar-free', or undefined try an array
+// Possible values: 'Regular', 'Sugar-free', or undefined , ill try an array
  
 
 // #### Challenge 2: Stock Check
 // You have a variable that tracks the number of Monster Energy cans left in the fridge. 
 // Use a ternary operator to print "Time to restock!" if the number is less than 5, or "We're stocked!" if the number is 5 or more.
-
+console.log("Challenge 2");
 let cansLeft = Math.floor (Math.random() * 10); // Any number of cans
     console.log(cansLeft);// wanted to check with other inputs without manually changing them.
 let mightRestock = cansLeft >= 5 ? "We're stocked!" :"Time to restock!";
@@ -46,8 +46,8 @@ let mightRestock = cansLeft >= 5 ? "We're stocked!" :"Time to restock!";
 // #### Challenge 3: Workout Intensity
 // Based on the current heart rate, determine if the user should drink a Monster Energy drink to boost their workout. 
 // If the heart rate is below 100 bpm, print "Boost needed!", otherwise, print "Energy levels are high!".
-
-let heartRate = 95; // Current heart rate in bpm
+console.log("Challenge 3");
+let heartRate =  Math.floor(Math.random() *105-55 + 1)+ 55; // Chose a randome range between 105 and 55
 console.log(heartRate);
 let currentHeart= heartRate <= 100 ? "Boost needed!" :"Energy levels are high!";
     console.log(currentHeart);
@@ -55,31 +55,36 @@ let currentHeart= heartRate <= 100 ? "Boost needed!" :"Energy levels are high!";
 // #### Challenge 4: Temperature Suitability
 // Monster Energy drinks are best served cold. Given the current temperature, use a ternary to print "Chilled to perfection!" 
 // if the temperature is below or equal to 5°C, or "Needs a cooler!" if above 5°C.
-
-let currentTemp = 4; // Current temperature in °C
-console.log(``);
+console.log("Challenge 4");
+let currentTemp =  Math.floor(Math.random() *21); // Current temperature in °C
+console.log(currentTemp);
+let isChilled = currentTemp <= 5 ? "Chilled to perfection!" : "Needs a cooler!";
+console.log(isChilled);
 
 
 // #### Challenge 5: Late Night Coding Session
 // Determine if it's a good idea to have a Monster Energy drink based on the current hour.
 // If it's between 7am and midnight (24-hour format), print "Unleash the beast!",
 // otherwise, print "Better stick to water."
-
+console.log("Challenge 5");
 // Define the current hour in 24-hour format
-let currentHour = 22; 
+let currentHour = Math.floor(Math.random() *24) + 1 ;
+console.log("The current hour is: ",currentHour); 
+let isGoodIdea = currentHour >=7 && currentHour < 24 ? "Unleash the beast!": "Better stick to water.";
+console.log(isGoodIdea);
 
 // Write your code below this line to determine if it's a good idea to have a Monster Energy drink based on the current hour
 // If it's between 7am and midnight (24-hour format), print "Unleash the beast!"
 // Otherwise, print "Better stick to water."
-
+/*console.log("Challenge 6");
 if ((currentHour >= 7) &&( currentHour = 24)) {
     console.log('Unleash the beast!');
-    console.print('unleash the baby');
+    
 } else {
     console.log('Now isnt the time for nonsense!');
-    console.print('Now isnt the time for nonsense!');
-}
-
+    
+}I wanted to see it with a simple if else statement
+*/
 
 
 
